@@ -104,7 +104,8 @@ app.post('/modifier', (req, res) => {
 			 nom: req.body.nom,
 			 prenom:req.body.prenom, 
 			 telephone:req.body.telephone,
-			 courriel:req.body.courriel
+			 courriel:req.body.courriel,
+			 ville:req.body.ville
 	 	}
 
 		var util = require("util");
@@ -119,7 +120,8 @@ app.post('/modifier', (req, res) => {
 			 nom: req.body.nom,
 			 prenom:req.body.prenom, 
 			 telephone:req.body.telephone,
-			 courriel:req.body.courriel
+			 courriel:req.body.courriel,
+			 ville:req.body.ville
 		 }
 	 }
 
