@@ -1,0 +1,218 @@
+/* Variables LESS */
+
+@noir: #000000;
+@blanc: #ffffff;
+@couleurEnteteColonne: #e2f3e8;
+@couleurFooter: #e8cbc1;
+@couleurFooter2: #fbddd3;
+@arrierePlan: #fdeae4;
+
+
+/* Reset... */
+	* {
+		padding:0;
+		margin:0;
+		box-sizing: border-box;
+	}
+
+/* base: AA8339 et D4A36A*/
+
+a {
+
+	padding: 10px;
+	font-size: 20px;
+
+}
+
+body{
+
+	background-color: @arrierePlan;
+
+		text-align: center;
+
+	form {
+
+		margin-top: 2%;
+		margin-left: 20px;
+		padding-bottom: 30px;
+
+		input {
+
+			background-color: @blanc;
+			padding: 2px;
+
+		}
+
+		input[type=submit]{
+
+			font-weight: bold;
+			margin-left: 1%;
+			padding: 10px;
+			font-size: 1em;
+
+		}
+
+	}
+
+	table {
+
+		tbody{
+
+			tr:first-child {
+
+				padding: 20px;
+				border: 1px solid @noir;
+				background-color: @couleurFooter;
+				font-weight: bold;
+				text-transform: uppercase;
+
+				th{
+
+					padding: 1%;
+					border: 1px solid @noir;
+
+					a{
+
+						text-decoration: none;
+					}
+
+				}
+
+			}
+
+			tr{
+
+				td {
+
+					font-size: 15px;
+					padding: 10px;
+					border: 1px solid @noir;
+					background-color: @blanc;
+
+					a{
+
+						text-decoration: none;
+
+					}
+				}
+
+			}
+
+
+		}
+
+	}
+
+	table {
+
+		margin: 0 auto;
+		border-collapse: collapse;
+
+	}
+
+	h1{
+
+		color: @noir;
+
+	}
+
+	header.entete {
+
+		background-color: @couleurFooter;
+		padding-bottom: 0.5%;
+
+		nav{
+
+			a{
+
+				border: 1px solid @noir;
+				border-collapse: collapse;
+				text-decoration: none;
+
+				&:hover{
+
+						background-color: @couleurFooter2;
+
+				}
+
+				i{
+
+						margin-right: 1%;
+
+				}
+
+			}
+
+		}
+
+		section{
+
+			margin-top: 2%;
+			margin-bottom: 5%;
+
+			i{
+
+				font-size: 3em;
+
+			}
+
+			h1{
+
+					color: @noir;
+					font-size: 1em;
+
+			}
+
+		}
+
+	}
+
+
+	footer {
+
+
+			padding-top: 2%;
+			padding-bottom: 2%;
+			margin-top: 10%;
+			background-color: @couleurFooter;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+			ul{
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;	
+
+				li{
+
+					text-decoration: none;
+					list-style: none;
+					//background-color: @couleurFooter2;
+					margin-top: 1%;
+					margin-bottom: 1%;
+
+					&:hover{
+
+						background-color: @couleurFooter2;
+
+					}
+
+					a{
+
+						text-decoration: none;
+						//color: @couleurFooter
+
+					}
+
+				}
+
+
+			}
+
+	}
+
+}
+
+
