@@ -69,6 +69,8 @@ const tabCourriel = [
 						"hotmail.com"
 					]
 
+
+/*
 const tabDomaine = [
 						"gmail.com",
 						"videotron.com",
@@ -76,7 +78,7 @@ const tabDomaine = [
 						"yahoo.com",
 						"hotmail.com"
 					]					
-
+*/
 const tabVille = [
 					"Montréal",
 					"Ottawa",
@@ -97,16 +99,13 @@ const tabVille = [
 					"London"
 					]
 
-
 const tableau = {
 				tabNom : tabNom,
 				tabPrenom : tabPrenom,
 				tabTelephone : tabTelephone,
 				tabCourriel : tabCourriel,
-
-				tabVille : tabVille,
-				tabDomaine : tabDomaine
-
+				tabVille : tabVille
+				//tabDomaine : tabDomaine
 				}
 /*
 module.exports.tabVille = tabVille

@@ -151,3 +151,44 @@ if (err) return console.log(err)
  })
 
 })
+
+
+
+
+
+
+
+ app.get('/peupler', (req, res) => {
+
+	const ObjectID = require('mongodb').ObjectID;
+ 	const peupler = require("./mes_modules/peupler");
+ 	let infosMembres;
+
+ 	let oModif = [];
+
+ 	for(var i = 0; i<10; i++){
+
+ 		infosMembres = peupler();
+
+		oModif[i] = {
+				 "_id": ObjectID(req.body['_id']), 
+				 nom: infosMembres.nom,
+				 prenom: infosMembres.prenom, 
+				 telephone: infosMembres.telephone,
+				 courriel: infosMembres.courriel
+		 }
+
+	}
+
+		//var util = require("util");
+		//console.log('util = ' + util.inspect(oModif));
+
+		/*==== SAVE MANY */
+		db.collection('adresse').insertMany(oModif, (err, result) => {
+			if (err) return console.log(err)
+		 	console.log('sauvegarder dans la BD')
+			res.redirect('/list')
+
+		 })
+
+})
