@@ -9,6 +9,7 @@ const maxNom = tableau.tabNom.length;
 const maxPrenom = tableau.tabPrenom.length;
 const maxTelephone = tableau.tabTelephone.length;
 const maxCourriel = tableau.tabCourriel.length;
+const maxVille = tableau.tabVille.length;
 
 //const maxVille = tableau.tabVille.length;
 //const maxDomaine = tableau.tabDomaine.length 
@@ -32,6 +33,9 @@ const peupler = () => {
 	position = Math.floor(Math.random() * maxTelephone);
 	let telephone = tableau.tabTelephone[position];
 
+	position = Math.floor(Math.random() * maxVille);
+	let ville = tableau.tabVille[position];
+
 /*
 	let position = Math.floor(Math.random() * maxVille);
 	let ville = tableau.tabVille[position];
@@ -44,7 +48,8 @@ const peupler = () => {
 			nom : nom,
 			prenom : prenom,
 			telephone : telephone,
-			courriel : courriel
+			courriel : courriel,
+			ville : ville
 			}
 
 }

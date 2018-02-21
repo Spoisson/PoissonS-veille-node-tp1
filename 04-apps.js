@@ -175,7 +175,8 @@ if (err) return console.log(err)
 				 nom: infosMembres.nom,
 				 prenom: infosMembres.prenom, 
 				 telephone: infosMembres.telephone,
-				 courriel: infosMembres.courriel
+				 courriel: infosMembres.courriel,
+				 ville : infosMembres.ville
 		 }
 
 	}
