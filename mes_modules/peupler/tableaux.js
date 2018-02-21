@@ -17,7 +17,21 @@ const tabNom = [
 						"Richard",
 						"Cartier",
 						"Branchaud",
-						"Larivière"
+						"Larivière",
+						"Gagnon",
+						"Roy",
+						"Côté",
+						"Bouchard",
+						"Gauthier",
+						"Morin",
+						"Fortin",
+						"Boucher",
+						"Smith",
+						"Murphy",
+						"Lam",
+						"Martin",
+						"Brown",
+						"Wilson"
 					]
 
 const tabPrenom = [
@@ -37,7 +51,27 @@ const tabPrenom = [
 						"Jason",
 						"Mathieu",
 						"Jérémy",
-						"Félix"
+						"Félix",
+						"Léa",
+						"Chloé",
+						"Vanessa",
+						"Paméla",
+						"Valérie",
+						"Jennifer",
+						"Nathalie",
+						"Nancy",
+						"Isabelle",
+						"Priscilla",
+						"Audrey",
+						"Josianne",
+						"Amélie",
+						"Hélène",
+						"Marie",
+						"Cynthia",
+						"Annica",
+						"Lydia",
+						"Karine"
+
 					]
 
 
@@ -58,7 +92,17 @@ const tabTelephone = [
 						"604-764-6910",
 						"604-817-9462",
 						"506-798-1886",
-						"902-321-7249"
+						"902-321-7249",
+						"519-687-9081",
+						"905-554-5472",
+						"250-967-8914",
+						"289-752-4159",
+						"519-413-8238",
+						"587-404-5244",
+						"250-625-6164",
+						"403-477-7022",
+						"519-244-4625",
+						"604-866-5370"
 					]
 
 const tabCourriel = [
@@ -66,7 +110,8 @@ const tabCourriel = [
 						"videotron.com",
 						"bell.ca",
 						"yahoo.com",
-						"hotmail.com"
+						"hotmail.com",
+						"msn.ca"
 					]
 
 
@@ -96,7 +141,11 @@ const tabVille = [
 					"Brampton",
 					"Québec",
 					"Halifax",
-					"London"
+					"London",
+					"Windsor",
+					"Sherbrooke",
+					"Victoria",
+					"Sarnia"
 					]
 
 const tableau = {
