@@ -155,9 +155,13 @@ if (err) return console.log(err)
 })
 
 
+/*
 
+	Cette fonction sera appelée lorsque l'utilisateur appuyera sur l'onglet "Peupler". Cet onglet permettra d'ajouter 10 nouveaux membres générés de façon aléatoire 
+	(à l'aide des données contenues dans tableaux.js) dans la liste des membres. Elle ajoutera ces membres dans la base de données ainsi que dans la liste qui à l'écran.
+	Pour se faire, un nouveau tableau sera généré dynamiquement.
 
-
+*/
 
 
  app.get('/peupler', (req, res) => {

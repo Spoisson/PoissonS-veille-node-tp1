@@ -1,5 +1,12 @@
 "use strict";
 
+/*
+
+	Ce tableau contiendra l'ensemble des données qui serviront à créer de nouveaux utilisateurs de façon aléatoire dans la BD ainsi que dans la liste qui sera mise à jour.
+	Les tableaux de données ci-bas, sera exportés pour pouvoir être appelés dans le script index.js.
+
+*/
+
 const tabNom = [
 						"Corbin",
 						"Poisson",
@@ -115,15 +122,6 @@ const tabCourriel = [
 					]
 
 
-/*
-const tabDomaine = [
-						"gmail.com",
-						"videotron.com",
-						"bell.ca",
-						"yahoo.com",
-						"hotmail.com"
-					]					
-*/
 const tabVille = [
 					"Montréal",
 					"Ottawa",
@@ -154,8 +152,8 @@ const tableau = {
 				tabTelephone : tabTelephone,
 				tabCourriel : tabCourriel,
 				tabVille : tabVille
-				//tabDomaine : tabDomaine
 				}
+
 /*
 module.exports.tabVille = tabVille
 module.exports.tabDomaine = tabDomaine
