@@ -218,7 +218,8 @@ app.post('/rechercher', (req, res) => {
 
 
 	let cleeRecherche = req.body.rechercher;
-	cleeRecherche = new RegExp("(.*)" + cleeRecherche + "(.*)");
+	cleeRecherche = new RegExp("(.*)" + cleeRecherche + "(.*)", "i");
+	//cleeRecherche += "i";
 	console.log(cleeRecherche);
 	let cursor = db.collection('adresse')
                 .find({$or:[{prenom: cleeRecherche}, {nom: cleeRecherche}, {courriel: cleeRecherche}, {telephone: cleeRecherche}, {ville: cleeRecherche}]})
