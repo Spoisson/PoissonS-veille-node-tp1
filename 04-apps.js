@@ -218,7 +218,8 @@ app.post('/rechercher', (req, res) => {
 
 
 	let cleeRecherche = req.body.rechercher;
-	//console.log(cleeRecherche);
+	cleeRecherche = new RegExp("(.*)" + cleeRecherche + "(.*)");
+	console.log(cleeRecherche);
 	let cursor = db.collection('adresse')
                 .find({$or:[{prenom: cleeRecherche}, {nom: cleeRecherche}, {courriel: cleeRecherche}, {telephone: cleeRecherche}, {ville: cleeRecherche}]})
                 .toArray(function(err, resultat){
@@ -229,6 +230,5 @@ app.post('/rechercher', (req, res) => {
 	 res.render('adresses.ejs', {adresses: resultat})
 	 }) ;
 
-     // .find({prenom: "Josianne"} || {nom: "Josianne"})
 
 })
