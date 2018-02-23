@@ -33,7 +33,7 @@ body{
 	text-align: center;
 
 
-	form {
+	form.mon_formulaire  {
 
 		display: flex;
 		justify-content: space-around;
@@ -67,6 +67,21 @@ body{
 			}
 
 		}
+
+		div{
+
+			height: 20vh;
+
+		}
+
+	}
+
+	form.formulaire_recherche {
+
+		display: flex;
+		height: 5vh;
+		justify-content: center;
+
 
 	}
 
@@ -378,6 +393,30 @@ body{
 @media (max-width: 900px) {
 
 	body {
+
+		form.mon_formulaire {
+
+			flex-direction: column;
+			justify-content: space-around;
+			height: 30vh;
+			width: 40%;
+
+			input {
+
+
+			}
+
+			input[type=submit]{
+
+
+				&:hover{
+
+
+				}
+
+			}
+
+		}
 
 		table {
 
