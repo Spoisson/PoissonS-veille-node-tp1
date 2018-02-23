@@ -199,3 +199,16 @@ if (err) return console.log(err)
 		 })
 
 })
+
+
+
+app.get('/vider', (req, res) => {
+
+	 db.collection('adresse').remove({}, (err, result) => {
+			if (err) return console.log(err)
+		 	console.log('vider la BD')
+			res.redirect('/list')
+
+		 });
+
+})
