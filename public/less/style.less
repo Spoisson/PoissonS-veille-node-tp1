@@ -8,6 +8,7 @@
 @arrierePlan: #fdeae4;
 @couleurbouton: #ffdfbf;
 @couleurTitresMembre: #8e2653;
+@gris: gray;
 
 
 /* Reset... */
@@ -87,6 +88,12 @@ body{
 
 				}
 
+				th:nth-child(1){
+
+					display: none;
+
+				}
+
 			}
 
 			tr{
@@ -103,6 +110,12 @@ body{
 						text-decoration: none;
 
 					}
+				}
+
+				td:nth-child(1){
+
+					display: none;
+
 				}
 
 				td:nth-child(7){
@@ -141,6 +154,28 @@ body{
 					&:hover{
 
 						background-color: @blanc;
+
+					}
+
+				}
+
+				td:nth-child(9){
+
+					background-color: @gris;
+					padding: 0;
+					margin-left: 2%;
+
+
+					a {					
+						font-size: 1em;
+						color: @blanc;
+
+					}
+
+					&:hover{
+
+						background-color: @noir;
+						//background-color: @couleurFooter2;
 
 					}
 
