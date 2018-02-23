@@ -172,7 +172,7 @@ if (err) return console.log(err)
 
  	let oModif = [];
 
- 	for(let i = 0; i<10; i++){
+ 	for(var i = 0; i<10; i++){
 
  		infosMembres = peupler();
 
@@ -242,14 +242,18 @@ app.post('/rechercher', (req, res) => {
 
 app.get('/profil/:id', (req, res) => {
 
- let id = req.params.id
- const ObjectID = require('mongodb').ObjectID;
- console.log(id)
- db.collection('adresse')
- .findOneAndDelete({"_id": ObjectID(req.params.id)}, (err, resultat) => {
-
-if (err) return console.log(err)
- res.redirect('/list')  // redirige vers la route qui affiche la collection
- })
+	 var id = req.params.id
+	 const ObjectID = require('mongodb').ObjectID;
+	 console.log(id)
+	 db.collection('adresse')
+	 .findOne({"_id": ObjectID(req.params.id)}, (err, resultat) => {
+	if (err) return console.log(err)
+		console.log(resultat);
+	  res.render('profilMembre.ejs', {adresses: resultat})  // redirige vers la route qui affiche la collection
+	 })
 
 })
+
+
+
+/*======================= LET ET VAR ================*/

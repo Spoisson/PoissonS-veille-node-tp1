@@ -99,7 +99,7 @@ app.post('/modifier', (req, res) => {
 	 if (req.body['_id'] != '')
 	 { 
 		console.log('sauvegarde') 
-		var oModif = {
+		let oModif = {
 			 "_id": ObjectID(req.body['_id']), 
 			 nom: req.body.nom,
 			 prenom:req.body.prenom, 
@@ -108,7 +108,7 @@ app.post('/modifier', (req, res) => {
 			 ville:req.body.ville
 	 	}
 
-		var util = require("util");
+		let util = require("util");
 		console.log('util = ' + util.inspect(oModif));
 
 	 }
@@ -116,7 +116,7 @@ app.post('/modifier', (req, res) => {
 	 {
 		 console.log('insert')
 		 console.log(req.body)
-		 var oModif = {
+		 let oModif = {
 			 nom: req.body.nom,
 			 prenom:req.body.prenom, 
 			 telephone:req.body.telephone,
@@ -142,7 +142,7 @@ app.post('/modifier', (req, res) => {
 */
 
 app.get('/detruire/:id', (req, res) => {
- var id = req.params.id
+ let id = req.params.id
  const ObjectID = require('mongodb').ObjectID;
  console.log(id)
  db.collection('adresse')
