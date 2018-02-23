@@ -7,6 +7,7 @@
 @couleurFooter2: #fbddd3;
 @arrierePlan: #fdeae4;
 @couleurbouton: #ffdfbf;
+@couleurTitresMembre: #8e2653;
 
 
 /* Reset... */
@@ -220,16 +221,27 @@ body{
 	div.ficheMembre {
 
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		justify-content: space-around;
 
 		div.titreChamps {
 
+			width: 15%;
+
 			h1 {
 
+				font-size: 1em;
+				background-color: @couleurTitresMembre;
+				margin: 3% auto;
+				color: @arrierePlan;
+
+			}
+
+			div {
+
 				font-size: 1.5em;
-				background-color: @couleurFooter;
-				width: 20%;
-				margin: 2% auto;
+				border-bottom: 1px solid @couleurTitresMembre;
+				margin: 0 auto;
 
 			}
 
