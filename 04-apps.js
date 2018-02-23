@@ -212,3 +212,23 @@ app.get('/vider', (req, res) => {
 		 });
 
 })
+
+
+app.post('/rechercher', (req, res) => {
+
+
+	let cleeRecherche = req.body.rechercher;
+	//console.log(cleeRecherche);
+	let cursor = db.collection('adresse')
+                .find({$or:[{prenom: cleeRecherche}, {nom: cleeRecherche}, {courriel: cleeRecherche}, {telephone: cleeRecherche}, {ville: cleeRecherche}]})
+                .toArray(function(err, resultat){
+	 if (err) return console.log(err)
+	 	console.log(JSON.stringify(resultat))
+	 // transfert du contenu vers la vue index.ejs (renders)
+	 // affiche le contenu de la BD
+	 res.render('adresses.ejs', {adresses: resultat})
+	 }) ;
+
+     // .find({prenom: "Josianne"} || {nom: "Josianne"})
+
+})
