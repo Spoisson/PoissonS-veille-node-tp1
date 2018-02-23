@@ -218,23 +218,34 @@ body{
 
 	}
 
+	h1.profilMembre {
+
+		color: @couleurTitresMembre;
+		margin-top: 4%;
+		margin-bottom: 2%;
+
+	}
+
 	div.ficheMembre {
 
+		border-top: 1px solid @couleurTitresMembre;
+		border-bottom: 1px solid @couleurTitresMembre;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		height: 30vh;
+		height: 15vh;
 		align-items: flex-end;
 
 		div.titreChamps {
 
+			background-color: @couleurFooter2;
 			width: 15%;
 
 			h1 {
 
 				font-size: 1em;
 				background-color: @couleurTitresMembre;
-				margin: 3% auto;
+				margin: 0 auto;
 				color: @arrierePlan;
 
 			}
@@ -244,7 +255,7 @@ body{
 				padding-top: 10%;
 				padding-bottom: 10%;
 				font-size: 1.5em;
-				border-bottom: 1px solid @couleurTitresMembre;
+				//border-bottom: 1px solid @couleurTitresMembre;
 				margin: 0 auto;
 
 			}
