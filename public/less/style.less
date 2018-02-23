@@ -41,14 +41,17 @@ body{
 		margin-top: 2%;
 		//margin-left: 20px;
 		padding-bottom: 30px;
-		width: 70%;
-		height: 6vh;
+		width: 50%;
+		height: 10%;
 
 
 		input {
 
+			flex: 1 0 0;
+
 			background-color: @blanc;
 			padding: 2px;
+			margin: 0.5%;
 		}
 
 		input[type=submit]{
@@ -402,7 +405,90 @@ body{
 }
 
 
-@media (max-width: 900px) {
+@media (min-width: 740px) and (max-width: 1024px) {
+
+	body {
+
+		form.mon_formulaire {
+
+			flex-direction: column;
+			justify-content: space-around;
+			height: 30vh;
+			width: 40%;
+			margin-top: 7%;
+
+			input {
+
+
+			}
+
+			input[type=submit]{
+
+
+				&:hover{
+
+
+				}
+
+			}
+
+		}
+
+		form.formulaire_recherche {
+
+			display: flex;
+			flex-direction: column;
+			height: 20vh;
+			justify-content: center;
+
+			div{
+
+				flex-direction: column;
+				//justify-content: flex-start;
+				width: 40%;
+				margin: 0 auto;
+				//align-items: center;
+
+				input {
+
+					margin: 2%;
+
+				}
+
+			}
+
+		}
+
+		table {
+
+			tbody { 
+
+				tr {
+					
+
+					td {
+
+		
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+
+}
+
+
+
+
+
+
+@media (max-width: 739px) {
 
 	body {
 
